@@ -73,9 +73,24 @@ body{
     margin-bottom: 13px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    position: relative;
+    animation: h-three 2s;
+    animation-delay: 0s;
+}
+@keyframes h-three {
+    0%  {left: 300px; top:0px; font-style: italic;}
+    100%  {left: 0px; top:0px; font-style: italic;}
 }
 #home .container h1{
     margin-top: 0px;
+    position: relative;
+    animation-duration: 3s;
+    animation-name: hello;
+}
+@keyframes hello {
+    0%   {left:624px; top:0px;font-style: italic;opacity: 0;}
+    50% {opacity: 0;}
+    100%  {left:0px; top:0px;font-style: italic;}
 }
 #home .container button{
     border: 1px solid #717fe0;
@@ -83,6 +98,13 @@ body{
     background-color:#717fe0;
     padding: 15px 22px;
     width: 50%;
+    animation-name: but;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+@keyframes but {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 #home button a{
     color: white;
@@ -128,7 +150,13 @@ body{
     /* text-decoration: underline; */
     font-size: 15px;
     cursor: pointer;
+    animation: ord 2s;
+    animation-iteration-count: infinite;
     border-bottom: 2px solid white;
+}
+@keyframes ord {
+    0% {bottom: -100px;}
+    100% {bottom: 0px;}
 }
 #xender .item .temp:hover {
     content-visibility: visible;
@@ -166,6 +194,13 @@ body{
     font-size: 2.3rem;
     margin-bottom: 0px;
     font-family: Poppins, sans-serif;
+    animation: pro 2s;
+    animation-delay: 1s;
+    position: relative;
+}
+@keyframes pro {
+    from {left: -500px; top:0px; font-style: italic;}
+    to {left:0px;top: 0px; font-style: italic;}
 }
 #product .container{
     display: flex;
